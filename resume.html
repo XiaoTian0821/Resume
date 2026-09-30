@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Ai Ting — Resume</title>
+    <style>
+        @page { size: A4 portrait; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 12mm 14mm;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            font-size: 9pt;
+            line-height: 1.4;
+            color: #1a1a1a;
+            background: #fff;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .no-print { display: none !important; }
+        }
+        .print-hint {
+            background: #1a73e8; color: #fff; padding: 10px 16px;
+            text-align: center; font-size: 12px; margin-bottom: 14px;
+            border-radius: 4px;
+        }
+        .resume { display: flex; flex-direction: column; height: 100%; }
+
+        /* ── Header with photo ── */
+        .header {
+            display: flex; align-items: center; gap: 14px;
+            padding-bottom: 10px; border-bottom: 2px solid #1a1a1a; margin-bottom: 10px;
+        }
+        .header-photo {
+            width: 72px; height: 72px; border-radius: 50%;
+            object-fit: cover; border: 2px solid #1a73e8; flex-shrink: 0;
+        }
+        .header-text { flex: 1; }
+        .header h1 { font-size: 20pt; font-weight: 700; letter-spacing: 1px; margin-bottom: 2px; }
+        .header .tagline { font-size: 9.5pt; color: #555; margin-bottom: 6px; }
+        .contact-row { display: flex; flex-wrap: wrap; gap: 12px; font-size: 8pt; color: #333; }
+        .contact-row span { display: flex; align-items: center; gap: 3px; }
+        .contact-row a { color: #1a73e8; text-decoration: none; }
+        .contact-row a:hover { text-decoration: underline; }
+
+        /* ── Objective ── */
+        .objective {
+            background: #f4f4f4; padding: 7px 12px; border-left: 3px solid #1a73e8;
+            margin-bottom: 10px; font-size: 8pt; color: #333; line-height: 1.5;
+        }
+
+        /* ── Two-column body ── */
+        .body { display: grid; grid-template-columns: 1fr 1.3fr; gap: 14px; flex: 1; }
+
+        /* ── Sections ── */
+        .section { margin-bottom: 10px; }
+        .section-title {
+            font-size: 9.5pt; font-weight: 700; color: #fff; background: #1a1a1a;
+            padding: 3px 10px; margin-bottom: 5px; letter-spacing: 0.5px;
+        }
+        .section-item { margin-bottom: 7px; }
+        .section-item h3 { font-size: 8.5pt; font-weight: 700; color: #1a1a1a; }
+        .section-item .meta { font-size: 7.5pt; color: #555; margin-bottom: 2px; }
+        .section-item .desc { font-size: 7.5pt; color: #333; line-height: 1.4; }
+
+        /* ── Skill tags ── */
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+        .skill-tag {
+            background: #e8f0fe; color: #1a73e8; padding: 2px 6px;
+            font-size: 7pt; border: 1px solid #1a73e8; border-radius: 2px;
+        }
+
+        /* ── Project list ── */
+        .project-list { list-style: none; }
+        .project-list li {
+            position: relative; padding-left: 9px; margin-bottom: 2px; font-size: 7.5pt; color: #333;
+        }
+        .project-list li::before {
+            content: "▸"; position: absolute; left: 0; color: #1a73e8; font-size: 7.5pt;
+        }
+
+        /* ── References ── */
+        .reference-item { margin-bottom: 5px; font-size: 7.5pt; }
+        .reference-item strong { display: block; font-size: 8pt; color: #1a1a1a; }
+
+        /* ── Footer ── */
+        .footer { margin-top: auto; padding-top: 6px; border-top: 1px solid #ddd; text-align: center; font-size: 7pt; color: #999; }
+    </style>
+</head>
+<body>
+    <div class="print-hint no-print">
+        Press <kbd>Ctrl+P</kbd> (Mac: <kbd>⌘P</kbd>) → select <strong>Save as PDF</strong> to export
+    </div>
+
+    <div class="resume">
+
+        <!-- ═══ HEADER: Personal Info + Half-body photo (profile.jpg) ═══ -->
+        <header class="header">
+            <img src="images/profile.jpg" alt="Li Ai Ting" class="header-photo">
+            <div class="header-text">
+                <h1>Li Ai Ting</h1>
+                <p class="tagline">Student | Web Developer | IT Professional</p>
+                <div class="contact-row">
+                    <span>📧 liaiting007@gmail.com</span>
+                    <span>📱 +60 16-619 0191</span>
+                    <span>📍 Bukit Mertajam, Penang</span>
+                    <span>🌐 <a href="https://liaiting.kolejsynergy.com" target="_blank">liaiting.kolejsynergy.com</a></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ═══ CAREER OBJECTIVE ═══ -->
+        <div class="objective">
+            Motivated Programming student at Synergy College seeking a 4-month internship (March–June 2026) in software and web development. Eager to apply skills in HTML, CSS, JavaScript, and emerging technologies to real-world projects, collaborate with a professional team, and gain hands-on experience that bridges academic learning with industry practice.
+        </div>
+
+        <div class="body">
+
+            <!-- ═══ LEFT COLUMN ═══ -->
+            <div class="left-col">
+
+                <!-- EDUCATION -->
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    <div class="section-item">
+                        <h3>Synergy College</h3>
+                        <div class="meta">Programming (Diploma) | Jun 2025 – Oct 2026</div>
+                        <div class="desc">Application Development | Relevant: Web Development, Database Systems, Programming Fundamentals</div>
+                    </div>
+                    <div class="section-item">
+                        <h3>SMK Berapit</h3>
+                        <div class="meta">Secondary Education | Form 1–5 | 2020 – 2024</div>
+                        <div class="desc">Completed SPM-equivalent studies with focus on Science and Mathematics.</div>
+                    </div>
+                </div>
+
+                <!-- TECHNICAL SKILLS -->
+                <div class="section">
+                    <div class="section-title">Technical Skills</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap 5</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">AR.js</span>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATIONS -->
+                <div class="section">
+                    <div class="section-title">Certifications & Qualifications</div>
+                    <div class="section-item">
+                        <div class="desc">• English CET-4 / CET-6</div>
+                        <div class="desc">• Malaysian Skills Certification (Skim Kemuhibadan) – In Progress</div>
+                        <div class="desc">• Bootstrap 5 Certificate – Udemy (2025)</div>
+                    </div>
+                </div>
+
+                <!-- LANGUAGES -->
+                <div class="section">
+                    <div class="section-title">Languages</div>
+                    <div class="section-item">
+                        <div class="desc"><strong>English</strong> — Professional working proficiency</div>
+                        <div class="desc"><strong>Mandarin</strong> — Native fluency</div>
+                        <div class="desc"><strong>Malay (BM)</strong> — Fluent</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ═══ RIGHT COLUMN ═══ -->
+            <div class="right-col">
+
+                <!-- Full-body photo in About/Profile area -->
+                <div class="section">
+                    <div class="section-title">Profile</div>
+                    <div style="text-align: center; margin-bottom: 8px;">
+                        <img src="images/profile-full.jpg" alt="Li Ai Ting — Full body portrait" 
+                             style="width: 100%; max-width: 180px; height: 220px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd;">
+                    </div>
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="section">
+                    <div class="section-title">Projects</div>
+
+                    <div class="section-item">
+                        <h3>AR Furniture Catalog</h3>
+                        <div class="meta">JavaScript · Three.js · WebXR · Bootstrap 5</div>
+                        <div class="desc">AR furniture catalog letting users preview 3D models in their real space via smartphone camera.</div>
+                        <ul class="project-list">
+                            <li>Developed AR interface using JavaScript and Three.js</li>
+                            <li>Implemented 3D model rendering and room scanning</li>
+                            <li>Built product catalog with price comparison</li>
+                        </ul>
+                        <div class="meta" style="margin-top:3px;"><a href="https://liaiting.kolejsynergy.com/AR-Furniture/" target="_blank" style="color:#1a73e8; text-decoration:none; font-size:7.5pt;">liaiting.kolejsynergy.com/AR-Furniture/</a></div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3>AR Food Menu</h3>
+                        <div class="meta">JavaScript · AR.js · Three.js · HTML5 · CSS3</div>
+                        <div class="desc">AR-powered food menu displaying 3D food models when customers scan the menu with their phone.</div>
+                        <ul class="project-list">
+                            <li>Designed AR tracking for menu image recognition</li>
+                            <li>Implemented 3D food rendering and nutritional info</li>
+                            <li>Created staff preparation interface</li>
+                        </ul>
+                        <div class="meta" style="margin-top:3px;"><a href="https://liaiting.kolejsynergy.com/AR-Food-Menu/" target="_blank" style="color:#1a73e8; text-decoration:none; font-size:7.5pt;">liaiting.kolejsynergy.com/AR-Food-Menu/</a></div>
+                    </div>
+
+                    <div class="section-item">
+                        <h3>Student Data Comparison System</h3>
+                        <div class="meta">JavaScript · HTML5 · CSS3 · Bootstrap 5 · File API</div>
+                        <div class="desc">Web-based system for comparing student data files using smart matching and exact match algorithms.</div>
+                        <ul class="project-list">
+                            <li>Built comparison engine with smart and exact match modes</li>
+                            <li>Designed upload wizard and column mapping interface</li>
+                            <li>Added match percentage display and report export</li>
+                        </ul>
+                        <div class="meta" style="margin-top:3px;"><a href="https://liaiting.kolejsynergy.com/Comparision/" target="_blank" style="color:#1a73e8; text-decoration:none; font-size:7.5pt;">liaiting.kolejsynergy.com/Comparision/</a></div>
+                    </div>
+                </div>
+
+                <!-- WORK EXPERIENCE -->
+                <div class="section">
+                    <div class="section-title">Work Experience</div>
+                    <div class="section-item">
+                        <h3>Web Development Intern (Seeking Opportunity)</h3>
+                        <div class="meta">Available: March 2026 – June 2026 (4 months)</div>
+                        <div class="desc">Eager to contribute to a development team, assist with front-end and back-end tasks, and gain real-world software engineering experience.</div>
+                    </div>
+                    <div class="section-item">
+                        <h3>Academic Projects & Freelance Web Development</h3>
+                        <div class="meta">2024 – Present</div>
+                        <div class="desc">Designed and developed multiple web projects using HTML, CSS, JavaScript, and Bootstrap. Built personal portfolio site and collaborated on team-based assignments.</div>
+                    </div>
+                </div>
+
+                <!-- REFERENCES -->
+                <div class="section">
+                    <div class="section-title">References</div>
+                    <div class="reference-item">
+                        <strong>Mr Ng Chuen Chuen</strong>
+                        <div>Lecturer, Synergy College</div>
+                        <div>📞 012-4346832 &nbsp;·&nbsp; ✉ nc287@hotmail.com</div>
+                    </div>
+                    <div class="reference-item" style="margin-top:4px; color:#888; font-style:italic; font-size:7.5pt;">
+                        Additional references available upon request.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- WEBSITE URL -->
+        <footer class="footer">
+            Portfolio: <a href="https://liaiting.kolejsynergy.com" target="_blank" style="color:#1a73e8; text-decoration:none;">liaiting.kolejsynergy.com</a> &nbsp;·&nbsp; Updated September 2026
+        </footer>
+
+    </div>
+</body>
+</html>
