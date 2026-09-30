@@ -1,0 +1,19 @@
+{
+  "kind": "agnes_image",
+  "mode": "image_to_image",
+  "model": "agnes-i2i-general-model",
+  "original_prompt": "Crop the right half of this image - full body portrait of Li Ai Ting sitting in office chair",
+  "enhanced_prompt": "Crop the right half of this split image to create a full body portrait photo. The image shows a young Asian woman in business suit sitting on an office chair in a professional office setting. Extract only the right side showing the full body from head to toe. Maintain original quality and aspect ratio of the cropped portion.",
+  "size": "1K",
+  "ratio": "3:2",
+  "reference_image": "https://cos-agnes-code.agnes-ai.com/agnes/code_attachment/eeb1314e-8989-45dc-aed6-371a6c1cfe9a/1790744033_a0df81a2.png",
+  "remote_url": "https://platform-outputs.agnes-ai.space/images/i2i/0dcaa16421db4b7fba19094c3d462d09/output.png",
+  "local_path": "C:\\xampp\\htdocs\\Resume\\.agnes\\artifacts\\images\\agnes-image-20260930-045441-01a0f0aa342175c296bfe47b3ca7fa25.png",
+  "metadata_path": "C:\\xampp\\htdocs\\Resume\\.agnes\\artifacts\\images\\agnes-image-20260930-045441-01a0f0aa342175c296bfe47b3ca7fa25.json",
+  "mime_type": "image/png",
+  "width": 1248,
+  "height": 832,
+  "bytes": 639204,
+  "preview": null,
+  "created_at": "2026-09-30T04:54:41.441873700+00:00"
+}

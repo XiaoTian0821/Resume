@@ -1,0 +1,19 @@
+{
+  "kind": "agnes_image",
+  "mode": "image_to_image",
+  "model": "agnes-i2i-general-model",
+  "original_prompt": "Crop the left half of this image - headshot portrait of Li Ai Ting in business suit",
+  "enhanced_prompt": "Crop the left half of this split image to create a professional headshot photo. The image shows a young Asian woman in business suit with glasses. Extract only the left side showing the upper body/headshot portion. Maintain original quality and aspect ratio of the cropped portion.",
+  "size": "1K",
+  "ratio": "3:2",
+  "reference_image": "https://cos-agnes-code.agnes-ai.com/agnes/code_attachment/eeb1314e-8989-45dc-aed6-371a6c1cfe9a/1790744033_5d32cdf7.png",
+  "remote_url": "https://platform-outputs.agnes-ai.space/images/i2i/0c3b7f0405e84067a16de9ccc961a0dc/output.png",
+  "local_path": "C:\\xampp\\htdocs\\Resume\\.agnes\\artifacts\\images\\agnes-image-20260930-045442-01a0f0aa379f7203954747fe963ac384.png",
+  "metadata_path": "C:\\xampp\\htdocs\\Resume\\.agnes\\artifacts\\images\\agnes-image-20260930-045442-01a0f0aa379f7203954747fe963ac384.json",
+  "mime_type": "image/png",
+  "width": 1248,
+  "height": 832,
+  "bytes": 744234,
+  "preview": null,
+  "created_at": "2026-09-30T04:54:42.335671400+00:00"
+}
