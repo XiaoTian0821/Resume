@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Li Ai Ting - Student, Web Developer, IT Professional">
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg" id="mainNav" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home">&lt; My Portfolio/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link btn-logout" href="#" id="logoutBtn" title="Sign out">
+                            <i class="fas fa-sign-out-alt me-1"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="section hero-section">
+        <div class="hero-bg-orb orb1"></div>
+        <div class="hero-bg-orb orb2"></div>
+        <div class="hero-bg-orb orb3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">Hello, I'm</div>
+                    <h1>Li Ai <span>Ting</span></h1>
+                    <p class="tagline">Student | Web Developer | IT Professional</p>
+                    <div class="typing-wrapper"><span id="typed-output"></span><span class="typed-cursor">|</span></div>
+                    <div class="status-badge"><span class="status-dot"></span>Available for Opportunities</div>
+                    <p class="intro">Passionate student and aspiring web developer with a strong interest in creating impactful digital solutions. Eager to apply technical skills in HTML, CSS, JavaScript, and emerging technologies to real-world projects.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary-custom"><i class="fas fa-folder-open"></i> View My Projects</a>
+                        <a href="resume.html" target="_blank" class="btn-secondary-custom" title="Convert to PDF"><i class="fas fa-file-pdf"></i> Convert to PDF</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/[your-whatsapp-number]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/[your-profile]" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:[your-email@example.com]" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <!-- HALF BODY / HEADSHOT PHOTO -->
+                        <img src="images/profile.jpg" alt="Li Ai Ting — Profile Photo (半身照)" loading="eager">
+                        <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="floating-badge badge-2"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="floating-badge badge-3"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal"><h2>About Me</h2><p>Get to know me better — my background, strengths, and what drives me.</p></div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <!-- FULL BODY PHOTO -->
+                    <img src="images/profile-full.jpg" alt="Li Ai Ting — Full Body Portrait (全身照)" loading="lazy">
+                </div>
+                <div class="about-content reveal">
+                    <h3>I'm Li Ai Ting, a passionate <span>Programming</span> student</h3>
+                    <p>I'm an application development student looking for a 4-month programming internship from 1 March 2026 to 30 June 2026. I want to use what I'm learning in software and web development, pick up tools used on a real team and leave with practical experience.</p>
+                    <div class="about-details">
+                        <div class="detail-item"><span class="detail-label">Name:</span><span class="detail-value">Li Ai Ting</span></div>
+                        <div class="detail-item"><span class="detail-label">Course:</span><span class="detail-value">Programming</span></div>
+                        <div class="detail-item"><span class="detail-label">College:</span><span class="detail-value">Synergy College</span></div>
+                        <div class="detail-item"><span class="detail-label">Email:</span><span class="detail-value">liaiting007@email.com</span></div>
+                        <div class="detail-item"><span class="detail-label">Location:</span><span class="detail-value">Bukit Mertajam, Penang</span></div>
+                        <div class="detail-item"><span class="detail-label">Availability:</span><span class="detail-value">Open to Opportunities</span></div>
+                    </div>
+                    <p><strong>Career Interest:</strong> Full-stack web development, front-end engineering, and creating user-friendly digital experiences.</p>
+                    <p><strong>Personal Strength:</strong> Quick learner, detail-oriented, and a strong team player who enjoys collaborative problem-solving.</p>
+                    <p><strong>Learning Interests:</strong> Web Development, JavaScript frameworks, responsive design, and cloud technologies.</p>
+                </div>
+            </div>
+            <div class="stats-row reveal">
+                <div class="stat-card"><div class="stat-number" data-target="3">0</div><div class="stat-label">Projects Completed</div></div>
+                <div class="stat-card"><div class="stat-number" data-target="11">0</div><div class="stat-label">Technical Skills</div></div>
+                <div class="stat-card"><div class="stat-number" data-target="1">0</div><div class="stat-label">Year Learning</div></div>
+                <div class="stat-card"><div class="stat-number" data-target="0">0</div><div class="stat-label">Certificates</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal"><h2>My Skills</h2><p>Technologies and tools I work with, plus my professional strengths.</p></div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header"><div class="skill-category-icon"><i class="fas fa-laptop-code"></i></div><h3 class="skill-category-title">Technical Skills</h3></div>
+                    <div class="skill-item" style="--skill-level:90%"><div class="skill-info"><span class="skill-name"><i class="fab fa-html5" style="color:#E34F26;margin-right:6px;"></i>HTML5</span><span class="skill-percent">90%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:85%"><div class="skill-info"><span class="skill-name"><i class="fab fa-css3-alt" style="color:#1572B6;margin-right:6px;"></i>CSS3</span><span class="skill-percent">85%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:75%"><div class="skill-info"><span class="skill-name"><i class="fab fa-js" style="color:#F7DF1E;margin-right:6px;"></i>JavaScript</span><span class="skill-percent">75%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:80%"><div class="skill-info"><span class="skill-name"><i class="fab fa-bootstrap" style="color:#7952B3;margin-right:6px;"></i>Bootstrap 5</span><span class="skill-percent">80%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:60%"><div class="skill-info"><span class="skill-name"><i class="fab fa-php" style="color:#777BB4;margin-right:6px;"></i>PHP</span><span class="skill-percent">60%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:55%"><div class="skill-info"><span class="skill-name"><i class="fas fa-database" style="color:#00758F;margin-right:6px;"></i>MySQL</span><span class="skill-percent">55%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:70%"><div class="skill-info"><span class="skill-name"><i class="fab fa-git-alt" style="color:#F05032;margin-right:6px;"></i>Git/GitHub</span><span class="skill-percent">70%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header"><div class="skill-category-icon"><i class="fas fa-laptop-code"></i></div><h3 class="skill-category-title">Technical Skills (cont.)</h3></div>
+                    <div class="skill-item" style="--skill-level:70%"><div class="skill-info"><span class="skill-name"><i class="fab fa-python" style="color:#3776AB;margin-right:6px;"></i>Python</span><span class="skill-percent">70%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:65%"><div class="skill-info"><span class="skill-name"><i class="fab fa-node-js" style="color:#68A063;margin-right:6px;"></i>Node.js</span><span class="skill-percent">65%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:60%"><div class="skill-info"><span class="skill-name"><i class="fab fa-react" style="color:#61DAFB;margin-right:6px;"></i>React.js</span><span class="skill-percent">60%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                    <div class="skill-item" style="--skill-level:20%"><div class="skill-info"><span class="skill-name"><i class="fab fa-laravel" style="color:#FF2D20;margin-right:6px;"></i>Laravel</span><span class="skill-percent">20%</span></div><div class="skill-bar"><div class="fill"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal"><h2>Education</h2><p>My academic journey and qualifications.</p></div>
+            <div class="timeline">
+                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><span class="timeline-date">[Start Year] – [End Year]</span><h4>Synergy College</h4><h5>Programming</h5>
+                    <p>Start: June 2025</p>
+                    <p>End: October 2026</p>
+                </div></div>
+                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><span class="timeline-date">[Start Year] – [End Year]</span><h4>SMK Berapit</h4><h5>Form 1 - Form 5</h5>
+                    <p>Start: 2020</p>
+                    <p>End: 2024</p>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal"><h2>My Projects</h2><p>Hands-on work I've built during my studies and personal time.</p></div>
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ar">AR</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: AR Furniture Catalog -->
+                <div class="project-card reveal" data-category="ar" data-title="AR Furniture Catalog" data-desc="An augmented reality furniture catalog that allows users to preview 3D furniture models in their real space using their smartphone camera." data-objective="To create an immersive shopping experience where customers can visualize furniture in their home before purchasing." data-problem="Traditional online furniture shopping lacks the ability to see how items will look in actual spaces." data-features="3D AR preview, Room scanning, Product catalog, Price comparison, Shopping cart integration" data-contribution="Developed the AR interface using JavaScript and Three.js, implemented 3D model rendering, and created the product catalog system." data-link="https://liaiting.kolejsynergy.com/AR-Furniture/" data-github="#" data-tech='["JavaScript","Three.js","WebXR","Bootstrap 5","HTML5 Canvas"]'>
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="AR Furniture Catalog preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://liaiting.kolejsynergy.com/AR-Furniture/" target="_blank" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" aria-label="View GitHub repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AR</span>
+                        <h4>AR Furniture Catalog</h4>
+                        <p>Preview furniture in your own space with Augmented Reality. Browse our collection, view 3D models, and place products in your room using your phone.</p>
+                        <div class="project-tech"><span>JavaScript</span><span>Three.js</span><span>WebXR</span></div>
+                        <div class="project-actions">
+                            <button class="btn-project-view open-project-modal" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fas fa-info-circle me-1"></i>View Details</button>
+                            <a href="https://liaiting.kolejsynergy.com/AR-Furniture/" class="btn-project-github" target="_blank" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: AR Food Menu -->
+                <div class="project-card reveal" data-category="ar" data-title="AR Food Menu" data-desc="An augmented reality food menu that displays 3D food models when customers scan the menu with their phone camera." data-objective="To enhance the dining experience by allowing customers to see 3D representations of dishes before ordering." data-problem="Traditional menus only show 2D images and descriptions, making it hard for customers to visualize the actual dish." data-features="AR menu scanning, 3D food models, Nutritional info display, Multiple cuisine support, Staff preparation tool" data-contribution="Designed the AR tracking system, implemented food model rendering, and created the staff preparation interface." data-link="https://liaiting.kolejsynergy.com/AR-Food-Menu/" data-github="#" data-tech='["JavaScript","AR.js","Three.js","HTML5","CSS3"]'>
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="AR Food Menu preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://liaiting.kolejsynergy.com/AR-Food-Menu/" target="_blank" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" aria-label="View GitHub repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AR</span>
+                        <h4>AR Food Menu</h4>
+                        <p>Experience your meal in augmented reality. Point your camera at the menu and see 3D models of food appear right on your screen.</p>
+                        <div class="project-tech"><span>JavaScript</span><span>AR.js</span><span>Three.js</span></div>
+                        <div class="project-actions">
+                            <button class="btn-project-view open-project-modal" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fas fa-info-circle me-1"></i>View Details</button>
+                            <a href="https://liaiting.kolejsynergy.com/AR-Food-Menu/" class="btn-project-github" target="_blank" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Student Data Comparison System -->
+                <div class="project-card reveal" data-category="database" data-title="Student Data Comparison System" data-desc="A web-based system for comparing student data files using smart matching algorithms and exact match modes." data-objective="To provide an efficient tool for educational institutions to compare and validate student records across different data sources." data-problem="Manual comparison of student records is time-consuming and error-prone; automated comparison reduces human error." data-features="Upload wizard, Smart match algorithm, Exact match mode, Column mapping, Match percentage display, Export reports" data-contribution="Built the comparison engine using JavaScript, implemented the upload wizard interface, and designed the matching algorithms." data-link="https://liaiting.kolejsynergy.com/Comparision/" data-github="#" data-tech='["JavaScript","HTML5","CSS3","Bootstrap 5","File API"]'>
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Student Data Comparison System preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://liaiting.kolejsynergy.com/Comparision/" target="_blank" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" aria-label="View GitHub repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Database</span>
+                        <h4>Student Data Comparison System</h4>
+                        <p>Compare student files quickly and accurately. Upload multiple files and get instant match results with percentage analysis.</p>
+                        <div class="project-tech"><span>JavaScript</span><span>HTML5</span><span>Bootstrap 5</span></div>
+                        <div class="project-actions">
+                            <button class="btn-project-view open-project-modal" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fas fa-info-circle me-1"></i>View Details</button>
+                            <a href="https://liaiting.kolejsynergy.com/Comparision/" class="btn-project-github" target="_blank" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects reveal">
+                <a href="https://liaiting.kolejsynergy.com/Project/" class="btn-view-all" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-th"></i> View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECT MODAL ==================== -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalProjectImage" src="" alt="Project screenshot" class="project-detail-image">
+                    <div class="project-detail-label">Objective</div><p id="modalObjective" class="project-detail-text"></p>
+                    <div class="project-detail-label">Problem Solved</div><p id="modalProblem" class="project-detail-text"></p>
+                    <div class="project-detail-label">Technologies Used</div><div id="modalTech" class="project-detail-tech"></div>
+                    <div class="project-detail-label">Main Features</div><p id="modalFeatures" class="project-detail-text"></p>
+                    <div class="project-detail-label">My Contribution</div><p id="modalContribution" class="project-detail-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="modalGithubLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary"><i class="fab fa-github me-2"></i>View on GitHub</a>
+                    <a href="#" id="modalLiveLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom"><i class="fas fa-external-link-alt me-2"></i>Live Demo</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== REFERENCES ==================== -->
+    <section id="references" class="section">
+        <div class="container">
+            <div class="section-header reveal"><h2>References</h2><p>What people I've worked with have to say about me.</p></div>
+            <div class="references-grid">
+                <div class="reference-card reveal">
+                    <i class="fas fa-quote-right reference-quote-icon"></i>
+                    <p>"[Insert a short quote or testimonial from your lecturer, supervisor, or colleague here.]"</p>
+                    <div class="reference-author">
+                        <div class="reference-author-info"><h5>Name: Mr Ng Chuen Chuen</h5>
+                            <span>Position: Lecturer</span><br>
+                            <span>Company: Synergy College</span><br>
+                            <span>Mobile Phone Number: 012-4346832</span><br>
+                            <span>Email: nc287@hotmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-card reveal">
+                    <i class="fas fa-quote-right reference-quote-icon"></i>
+                    <p>"[Another testimonial from an internship supervisor or project mentor.]"</p>
+                    <div class="reference-author">
+                        <div class="reference-author-info"><h5>[Reference Name]</h5><span>[Position], [Organization]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal"><h2>Get In Touch</h2><p>Have a question or want to work together? Reach out below.</p></div>
+            <div class="contact-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
+                <div class="contact-info-card reveal">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just a friendly chat about technology.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text"><h5>Email</h5><a href="mailto:liaiting007@gmail.com">liaiting007@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-item-text"><h5>Phone</h5><a href="tel:+60 16-619 0191">+60 16-619 0191</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-item-text"><h5>Location</h5><p>Bukit Mertajam, Penang</p></div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/[your-whatsapp-number]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/[your-profile]" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:[your-email@example.com]" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>&lt;My Portfolio/&gt;</h3>
+                    <p>Passionate IT student and aspiring web developer focused on building clean, functional, and user-friendly digital solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/[your-whatsapp-number]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/[your-profile]" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:[your-email@example.com]" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#references">References</a></li>
+                        <li><a href="#" id="footerLogout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Li Ai Ting. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
