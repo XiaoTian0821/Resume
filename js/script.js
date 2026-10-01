@@ -175,6 +175,21 @@ document.addEventListener('DOMContentLoaded', function () {
     animateSkillBars(); // Run on load
 
     // =========================================================
+    // 7.5. LANGUAGE BAR ANIMATION
+    // =========================================================
+    function animateLanguageBars() {
+        const bars = document.querySelectorAll('.language-card');
+        bars.forEach(function (card) {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80 && !card.classList.contains('animated')) {
+                card.classList.add('animated');
+            }
+        });
+    }
+    window.addEventListener('scroll', animateLanguageBars, { passive: true });
+    animateLanguageBars(); // Run on load
+
+    // =========================================================
     // 8. STAT COUNTER ANIMATION
     // =========================================================
     let statsCounted = false;
